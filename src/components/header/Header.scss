@@ -1,0 +1,152 @@
+@import "../../scss/variables.scss";
+
+.cover-container {
+  background-image: linear-gradient(
+      to bottom,
+      $first-gradient,
+      $second-gradient
+    ),
+    url("../../images/rick.png");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: map-get($breakpoints, "xs")) {
+    height: 360px;
+  }
+
+  @media (min-width: map-get($breakpoints, "sm")) {
+    height: 380px;
+  }
+
+  @media (min-width: map-get($breakpoints, "lg")) {
+    height: 400px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xl")) {
+    height: 520px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xxl")) {
+    height: 600px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xxxl")) {
+    height: 800px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    color: $text-color;
+    font-weight: $secondary-font-weight;
+
+    .home a {
+      color: $text-color;
+      text-decoration: none;
+
+      @media (min-width: map-get($breakpoints, "xs")) {
+        font-size: $header-text-max-lg;
+      }
+
+      @media (min-width: map-get($breakpoints, "xl")) {
+        font-size: $header-text-max-xxl;
+      }
+
+      @media (min-width: map-get($breakpoints, "xxl")) {
+        font-size: $header-text-max-xxxl;
+      }
+    }
+
+    .home:hover {
+      color: $hover-color;
+      transition: 200ms;
+    }
+
+    .nav-right {
+      align-items: center;
+      display: flex;
+      color: $text-color;
+      text-decoration: none;
+    }
+
+    .text {
+      color: $text-color;
+      text-decoration: none;
+
+      @media (min-width: map-get($breakpoints, "xs")) {
+        font-size: $header-text-max-lg;
+      }
+
+      @media (min-width: map-get($breakpoints, "xl")) {
+        font-size: $header-text-max-xxl;
+      }
+
+      @media (min-width: map-get($breakpoints, "xxl")) {
+        font-size: $header-text-max-xxxl;
+      }
+    }
+
+    .text:hover {
+      color: $hover-color;
+      transition: 200ms;
+    }
+
+    .text:first-child {
+      margin-right: 28px;
+    }
+  }
+
+  .title {
+    color: $text-color;
+    font-weight: $primary-font-weight;
+
+    @media (min-width: map-get($breakpoints, "xs")) {
+      font-size: $font-size-h1-xs;
+    }
+
+    @media (min-width: map-get($breakpoints, "sm")) {
+      font-size: $font-size-h1-sm;
+    }
+
+    @media (min-width: map-get($breakpoints, "md")) {
+      font-size: $font-size-h1-md;
+    }
+
+    @media (min-width: map-get($breakpoints, "lg")) {
+      font-size: $font-size-h1-lg;
+    }
+
+    @media (min-width: map-get($breakpoints, "xl")) {
+      font-size: $font-size-h1-xl;
+    }
+
+    @media (min-width: map-get($breakpoints, "xxl")) {
+      font-size: $font-size-h1-xxl;
+    }
+
+    @media (min-width: map-get($breakpoints, "xxxl")) {
+      font-size: $font-size-h1-xxxl;
+    }
+  }
+
+  .title-section {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+
+    @media (min-width: map-get($breakpoints, "xs")) {
+      margin: 0 30px 0 30px;
+    }
+
+    @media (min-width: map-get($breakpoints, "sm")) {
+      margin: 0 20px 0 20px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import "../../scss/variables.scss";
+
+.card-link {
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: none;
+  width: 300px;
+
+  @media (min-width: map-get($breakpoints, "xs")) {
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: map-get($breakpoints, "sm")) {
+    padding-bottom: 20px;
+    margin-right: 8px;
+  }
+
+  @media (min-width: map-get($breakpoints, "md")) {
+    padding: 0px 15px 30px 15px;
+    margin-right: 8px;
+  }
+
+  @media (min-width: map-get($breakpoints, "lg")) {
+    padding: 0px 10px 30px 10px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xl")) {
+    padding: 0px 10px 30px 10px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xxl")) {
+    padding: 0px 12px 12px 0px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xxxl")) {
+    padding: 0px 14px 14px 0px;
+  }
+}
+
+.card-link:hover {
+  transform: scale(1.05);
+}
+
+.squared-image {
+  border-radius: 16px 16px 0px 0px;
+}
+
+.name-label {
+  background-color: $character-name-label;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  color: $text-color;
+  font-size: 18px;
+  font-weight: $primary-font-weight;
+  padding: 8px 0 8px 0;
+  text-align: center;
+}

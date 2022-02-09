@@ -1,0 +1,58 @@
+// color palette
+$background-color: #24282f;
+$character-name-label: #000000;
+$first-gradient: rgba(54, 28, 61, 0.95);
+$footer: #131418;
+$hover-color: #ebca79;
+$primary-color: #3c3e44;
+$second-gradient: rgba(13, 6, 19, 0.308);
+$secondary-text-color: #9e9e9e;
+
+$text-color: #ffffff;
+
+// status icons color
+$status-icon-color-alive: #2ac503;
+$status-icon-color-dead: #eb0505;
+$status-icon-color-unknown: #c5c1c1;
+
+// font weight used
+$primary-font-weight: 900;
+$secondary-font-weight: 700;
+$third-font-weight: 600;
+
+// nav bar text
+$header-text-max-lg: 18px;
+$header-text-max-xxl: 20px;
+$header-text-max-xxxl: 24px;
+
+// font size H1
+$font-size-h1-xs: 32px;
+$font-size-h1-sm: 36px;
+$font-size-h1-md: 42px;
+$font-size-h1-lg: 48px;
+$font-size-h1-xl: 48px;
+$font-size-h1-xxl: 80px;
+$font-size-h1-xxxl: 100px;
+
+// font size H2
+$font-size-h2-max-md: 22px;
+$font-size-h2-max-xl: 35px;
+$font-size-h2-max-xxxl: 48px;
+
+// font size H3 da cambiare solo md a 26px
+// anzichè max-md dovrà diventare max sm-md
+$font-size-h3-max-md: 22px;
+$font-size-h3-max-xl: 26px;
+$font-size-h3-max-xxxl: 30px;
+
+//  breakpoints to create a responsive app
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  sm-md: 600px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1536px,
+);

@@ -1,0 +1,164 @@
+@import "../../scss/variables.scss";
+
+.card {
+  background-color: $primary-color;
+  border-radius: 16px;
+  display: flex;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  @media (min-width: map-get($breakpoints, "xs")) {
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: map-get($breakpoints, "sm")) {
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: map-get($breakpoints, "sm-md")) {
+    flex-direction: column;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: map-get($breakpoints, "md")) {
+    flex-direction: column;
+    margin: 0px 10px 34px 10px;
+  }
+
+  @media (min-width: map-get($breakpoints, "lg")) {
+    flex-direction: row;
+    margin-bottom: 38px;
+    width: 550px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xl")) {
+    flex-direction: row;
+    margin: 0px 19px 38px 19px;
+    width: 500px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xxl")) {
+    flex-direction: row;
+    margin: 0px 19px 38px 19px;
+    width: 600px;
+  }
+}
+
+.character-img {
+  border-top-left-radius: 16px;
+
+  @media (min-width: map-get($breakpoints, "xs")) {
+    border-top-right-radius: 16px;
+    height: 280px;
+  }
+
+  @media (min-width: map-get($breakpoints, "sm")) {
+    border-top-right-radius: 16px;
+    height: 320px;
+  }
+
+  @media (min-width: map-get($breakpoints, "md")) {
+    border-top-right-radius: 16px;
+    height: 300px;
+  }
+
+  @media (min-width: map-get($breakpoints, "lg")) {
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: unset;
+    height: 252px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xl")) {
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: unset;
+    height: 250px;
+  }
+
+  @media (min-width: map-get($breakpoints, "xxl")) {
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: unset;
+    height: 250px;
+  }
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 12px;
+}
+
+.text-container {
+  align-items: baseline;
+  color: $text-color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.character-name {
+  font-size: 22px;
+  font-weight: $primary-font-weight;
+  padding-bottom: 6px;
+  text-decoration: none;
+}
+
+.character-link {
+  text-decoration: none;
+  color: $text-color;
+
+  @media (min-width: map-get($breakpoints, "xs")) {
+    font-size: $font-size-h3-max-md;
+  }
+
+  @media (min-width: map-get($breakpoints, "lg")) {
+    font-size: $font-size-h3-max-xl;
+  }
+
+  @media (min-width: map-get($breakpoints, "xxl")) {
+    font-size: $font-size-h3-max-xxxl;
+  }
+}
+
+.character-link:hover {
+  color: $hover-color;
+  transition: 200ms;
+}
+
+.character-gender {
+  color: $text-color;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.episodes {
+  border: solid 1px #8a8888;
+  background-color: #8a8888;
+  border-radius: 6px;
+  padding: 1px 3px 1px 3px;
+}
+
+.character-status {
+  align-items: center;
+  color: $text-color;
+  display: flex;
+  font-weight: $third-font-weight;
+}
+
+.location-text {
+  color: $secondary-text-color;
+  font-weight: 500;
+  padding-bottom: 8px;
+  padding-top: 16px;
+}
+
+.location-link {
+  color: $text-color;
+  font-size: 18px;
+  text-decoration: none;
+}
+.location-link:hover {
+  color: $hover-color;
+  transition: 200ms;
+}

@@ -1,0 +1,33 @@
+@import "../../scss/variables.scss";
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+
+  .h2-title {
+    color: $text-color;
+    display: flex;
+    font-weight: $primary-font-weight;
+    justify-content: center;
+    padding: 58px 0 46px 0;
+
+    @media (min-width: map-get($breakpoints, "xs")) {
+      font-size: $font-size-h2-max-md;
+    }
+
+    @media (min-width: map-get($breakpoints, "lg")) {
+      font-size: $font-size-h2-max-xl;
+    }
+
+    @media (min-width: map-get($breakpoints, "xxl")) {
+      font-size: $font-size-h2-max-xxxl;
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}

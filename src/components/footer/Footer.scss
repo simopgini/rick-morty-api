@@ -1,0 +1,69 @@
+@import "../../scss/variables.scss";
+
+footer {
+  align-items: center;
+  background: $footer;
+  color: $secondary-text-color;
+  display: flex;
+  flex-direction: column;
+  font-weight: $third-font-weight;
+  justify-content: center;
+  padding: 120px;
+  width: 100%;
+
+  .social {
+    margin-bottom: 8px;
+  }
+
+  .fb:hover {
+    color: $hover-color;
+    transition: 200ms;
+    font-weight: 700;
+  }
+
+  .author {
+    text-align: center;
+  }
+
+  .facebook {
+    color: $text-color;
+  }
+
+  .fb:hover {
+    color: $hover-color;
+    transition: 200ms;
+    font-weight: 700;
+  }
+
+  .instagram {
+    color: $text-color;
+    padding: 0 6px 0 6px;
+  }
+
+  .ig:hover {
+    color: $hover-color;
+    transition: 200ms;
+    font-weight: 700;
+  }
+
+  .github {
+    color: $text-color;
+  }
+
+  .git:hover {
+    color: $hover-color;
+    transition: 200ms;
+    font-weight: 700;
+  }
+
+  .inline-name {
+    .author-link {
+      color: $text-color;
+      font-weight: 700;
+    }
+    .author-link:hover {
+      text-decoration: underline;
+      text-decoration-color: $hover-color;
+    }
+  }
+}

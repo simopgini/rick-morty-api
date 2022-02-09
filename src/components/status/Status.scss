@@ -1,0 +1,21 @@
+@import "../../scss/variables.scss";
+
+@mixin theme($theme: $status-icon-color-dead) {
+  background-color: $theme;
+  border-radius: 50%;
+  height: 10px;
+  margin-right: 4px;
+  width: 10px;
+}
+
+.status-dead {
+  @include theme;
+}
+
+.status-alive {
+  @include theme($theme: $status-icon-color-alive);
+}
+
+.status-unknown {
+  @include theme($theme: $status-icon-color-unknown);
+}
